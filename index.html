@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickList</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo do QuickList">
+        <img src="assets/quicklist.png" alt="texto do QuickList">
+    </header>
+
+    <main>
+        <div class="container" id="shoppingWeek">
+            <a href="#">
+                <img src="assets/back-button.svg" alt="botão de voltar">
+            </a>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>
+                        <label for="itemName">
+                            <h1>Compras da Semana</h1>
+                        </label>
+                    </legend>
+
+                    <div>
+                        <input type="text" name="addItem" id="itemName" placeholder="Adicione um novo item">
+                        <button type="submit">Adicionar Item</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="container" id="shoppingList">
+            <ul>
+                <!-- <li>
+                    <div class="custom-checkBox">
+                        <img src="assets/selected.svg" alt="">
+                    </div>
+                    <p>Pão de Forma</p>
+                    <img src="assets/bin.svg" class="remove" alt="excluir">
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="container" id="remove-msg">
+            <img src="assets/warning-circle-filled.svg" alt="alerta ícone">
+            <p>O item foi removido da lista</p>
+            <img src="assets/delete-small.svg" alt="botão de alerta">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
